@@ -17,21 +17,21 @@
                 <input type="text" class="form-control form-control-sm" id="searchInputText" placeholder="Filter user">
             </div>
             <div class="col-2">
-                <button type="submit" class="btn btn-primary btn-sm w-100" onsubmit="search(); return false;" >Submit</button>
+                <button type="submit" class="btn btn-primary btn-sm w-100"  >Submit</button>
             </div>
         </form>
 
         <table class="table table-hover table-striped mt-4">
             <thead>
                 <tr>
-                    <th><span><span>Last Name</span> <i class="bi bi-sort-alpha-down"></i></span></th>
-                    <th><span><span>First Name</span> <i class="bi bi-sort-alpha-down d-none"></i></span></th>
-                    <th><span><span>Gender</span> <i class="bi bi-sort-alpha-down d-none"></i></span></th>
-                    <th><span><span>Age</span> <i class="bi bi-sort-numeric-down d-none"></i></span></th>
-                    <th><span><span>Height</span> <i class="bi bi-sort-numeric-down d-none"></i></span></th>
-                    <th><span><span>Weight</span> <i class="bi bi-sort-numeric-down d-none"></i></span></th>
-                    <th><span><span>Eye Color</span> <i class="bi bi-sort-alpha-down d-none"></i></span></th>
-                    <th><span><span>Hair</span> <i class="bi bi-sort-alpha-down d-none"></i></span></th>
+                    <th><span><span><a href="#" onclick="sort('lastName')">Last Name</a></span> <a href="#"><i class="bi bi-sort-alpha-down"></i></a></span></th>
+                    <th><span><span><a href="#" onclick="sort('firstName')">First Name</a></span> <a href="#"><i class="bi bi-sort-alpha-down"></i></a></span></th>
+                    <th><span><span><a href="#" onclick="sort('gender')">Gender</a></span> <a href="#"><i class="bi bi-sort-alpha-down"></i></a></span></th>
+                    <th><span><span><a href="#" onclick="sort('age')">Age</a></span> <a href="#"><i class="bi bi-sort-numeric-down"></i></a></span></th>
+                    <th><span><span><a href="#" onclick="sort('height')">Height</a></span> <a href="#"><i class="bi bi-sort-numeric-down"></i></a></span></th>
+                    <th><span><span><a href="#" onclick="sort('weight')">Weight</a></span> <a href="#"><i class="bi bi-sort-numeric-down"></i></a></span></th>
+                    <th><span><span><a href="#" onclick="sort('eyeColor')">Eye Color</a></span> <a href="#"><i class="bi bi-sort-alpha-down"></i></a></span></th>
+                    <th><span><span><a href="#" onclick="sort('hair.color')">Hair</a></span> <a href="#"><i class="bi bi-sort-alpha-down"></i></a></span></th>
                 </tr>
             </thead>
             <tbody id="tableBody">
